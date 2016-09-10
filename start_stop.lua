@@ -332,11 +332,7 @@ function courseplay:start(self)
 		end;
 	end;
 	
-	--check Crab Steering mode for HolmerDLC
-	if self.cp.isHolmerDlcCrabSteeringPossible and self.crabSteering.stateTarget > 1  then
-		self.cp.hasCrabSteeringActive = true;
-	end
-
+	
 	-- ok i am near the waypoint, let's go
 	self.cp.savedCheckSpeedLimit = self.checkSpeedLimit;
 	self.checkSpeedLimit = false
